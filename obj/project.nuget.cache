@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "rU11L4sgokTFplJ243p/VM3XYlaeXMJPNzfbBg4CoqAk4uSiXnAAODMqxunDeFJjPWz+X49N/OiGOUF6pfgy4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucho\\Documents\\Luchi\\TelemetryApi\\TelemetryApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucho\\.nuget\\packages\\microsoft.extensions.apidescription.server\\8.0.0\\microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\microsoft.openapi\\2.3.0\\microsoft.openapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.0\\swashbuckle.aspnetcore.10.1.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.0\\swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.0\\swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.0\\swashbuckle.aspnetcore.swaggerui.10.1.0.nupkg.sha512",
+    "C:\\Users\\lucho\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
