@@ -17,27 +17,27 @@ app.MapGet("/health", () => Results.Ok(new { status = "Healty"}));
 app.MapPost("/ingest", ([FromBody] TelemetryEvent telemetryEvent, 
                                     ITelemetryStore telemetryStore,
                                     CancellationToken cancellationToken) =>{
-            if (string.IsNullOrWhiteSpace(telemetryEvent.SessionId))
-            {
-                return Results.BadRequest(new { error = "SessionId is required." });
-            }
-            
-            if (string.IsNullOrWhiteSpace(telemetryEvent.EventName))
-            {
-                return Results.BadRequest(new {error = "EventName is required."});
-            }
+                if (string.IsNullOrWhiteSpace(telemetryEvent.SessionId))
+                {
+                    return Results.BadRequest(new { error = "SessionId is required." });
+                }
+                
+                if (string.IsNullOrWhiteSpace(telemetryEvent.EventName))
+                {
+                    return Results.BadRequest(new {error = "EventName is required."});
+                }
 
-            if (telemetryEvent.Timestamp == default){
-                return Results.BadRequest( new { error = "Timestamp is required."});
-            }
+                if (telemetryEvent.Timestamp == default){
+                    return Results.BadRequest( new { error = "Timestamp is required."});
+                }
 
-            if (cancellationToken.IsCancellationRequested)
-            {
-                return Results.StatusCode(499); // Client Closed Request
-            }
-            
-            telemetryStore.AddEvent(telemetryEvent);
-            return Results.Accepted();
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    return Results.StatusCode(499); // Client Closed Request
+                }
+                
+                telemetryStore.AddEvent(telemetryEvent);
+                return Results.Accepted();
             });
 
 app.MapGet("/sessions/{sessionId}/summary", (string sessionId, ITelemetryStore telemetryStore) =>{

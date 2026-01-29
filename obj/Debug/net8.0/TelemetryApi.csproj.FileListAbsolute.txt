@@ -31,3 +31,4 @@ C:\Users\lucho\Documents\Luchi\TelemetryApi\bin\Debug\net8.0\System.Text.Json.dl
 C:\Users\lucho\Documents\Luchi\TelemetryApi\obj\Debug\net8.0\TelemetryApi.csproj.AssemblyReference.cache
 C:\Users\lucho\Documents\Luchi\TelemetryApi\obj\Debug\net8.0\TelemetryApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\lucho\Documents\Luchi\TelemetryApi\obj\Debug\net8.0\Telemetr.4D519045.Up2Date
+C:\Users\lucho\Documents\Luchi\TelemetryApi\obj\Debug\net8.0\TelemetryApi.sourcelink.json

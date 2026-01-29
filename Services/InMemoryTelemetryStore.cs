@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using TelemetryApi.Models;
+using System.Threading.Tasks;
 
 namespace TelemetryApi.Services;
 public class InMemoryTelemetryStore : ITelemetryStore
@@ -56,5 +57,7 @@ public class InMemoryTelemetryStore : ITelemetryStore
                 );
             }
         }
+
+        // Remove or implement GetDiagnosticCpu method correctly if needed.
     }
 }
