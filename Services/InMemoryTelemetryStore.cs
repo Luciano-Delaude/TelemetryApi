@@ -57,7 +57,5 @@ public class InMemoryTelemetryStore : ITelemetryStore
                 );
             }
         }
-
-        // Remove or implement GetDiagnosticCpu method correctly if needed.
     }
 }
