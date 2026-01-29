@@ -34,7 +34,6 @@ app.MapPost("/telemetry", async (
 {
     var logger = loggerFactory.CreateLogger("TelemetryIngest");
 
-    // Validación básica
     if (string.IsNullOrWhiteSpace(sample.ClientId))
         return Results.BadRequest(new { error = "ClientId is required" });
 

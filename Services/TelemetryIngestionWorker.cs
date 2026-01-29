@@ -24,7 +24,6 @@ public class TelemetryIngestionWorker : BackgroundService
         await foreach (var sample in _reader.ReadAllAsync(stoppingToken))
         {
             _store.UpsertIfNewer(sample);
-            // opcional: log de eventos “problemáticos” podrías hacerlo aquí o en GET
         }
     }
 }

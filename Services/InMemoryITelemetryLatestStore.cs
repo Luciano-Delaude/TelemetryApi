@@ -9,9 +9,8 @@ public class InMemoryTelemetryLatestStore : ITelemetryLatestStore
 
     public void UpsertIfNewer(TelemetrySample sample)
     {
-        // Idempotencia simple: solo actualiza si es más nuevo (timestamp mayor).
         _latestByClient.AddOrUpdate(
-            sample.ClientId!,               // validado antes
+            sample.ClientId!,              
             sample,
             (_, existing) => sample.Timestamp > existing.Timestamp ? sample : existing
         );
